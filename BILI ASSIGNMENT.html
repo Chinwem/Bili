@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>frances code quiz</title>
+</head>
+<body>
+	<head>
+		<h1 class="head"> FRANCES CODE QUIZ</h1>
+		<marquee><p>Let's see how good you are with your coding language...</p></marquee>
+	</head>
+	<div class="body">
+		<div>
+			<h2>CODE QUIZ</h2>
+			<h3> Click the correct answers</h3>
+		</div>
+		<form><div>
+			 <p>what language is for creating web page?</p>
+     <input type="radio" id="ert1" name="html" value="html"><label>html</label>
+     <input type="radio" id="ert1" name="css" value="css"><label>css</label>
+     <input type="radio" id="ert1" name="javascript" value="javascript"><label>javascript</label>
+     <p>what language is for styling web page?</p>
+     <input type="radio" id="ert2" name="html" value="html"><label>html</label>
+     <input type="radio" id="ert2" name="css" value="css"><label>css</label>
+     <input type="radio" id="ert2" name="javascript" value="javascript"><label>javascript</label>
+     <p>what language is for functioning web page? </p>
+     <input type="radio" id="ert3" name="html" value="html"><label>html</label>
+     <input type="radio" id="ert3" name="css" value="css"><label>css</label>
+     <input type="radio" id="ert3" name="javascript" value="javascript"><label>javascript</label>
+     <p>what language is for backend development? </p>
+     <input type="radio" id="ert4" name="mysql" value="mysql"><label>mysql</label>
+     <input type="radio" id="ert4" name="javascript" value="javascript"><label>javascript</label>
+     <input type="radio" id="ert4" name="php" value="php"><label>php</label>
+     <p>what language is for creating database? </p>
+     <input type="radio" id="ert5" name="python" value="python"><label>python</label>
+     <input type="radio" id="ert5" name="mysql" value="mysql"><label>mysql</label>
+     <input type="radio" id="ert5" name="php" value="php"><label>php</label> <br>
+     <input type="submit" id="sebt" name="submit" value="submit">
+		</div></form>
+	</div>
+
+	<div>
+		<script type="text/javascript">
+			document.getElementById("sebt").onclick = function() {
+             var erts1 = document.getElementById("ert1").value
+             var erts2 = document.getElementById("ert2").value
+             var erts3 = document.getElementById("ert3").value
+             var erts4 = document.getElementById("ert4").value
+             var erts5 = document.getElementById("ert5").value
+
+         
+           let lang = 0
+          if(erts1 = "html") {
+	       lang ++;
+          }
+
+          if(erts2 = "css") {
+	        lang ++;
+          } 
+
+          if(erts3 = "javascript") {
+	       lang ++;
+          }
+
+          if(erts4 = "php") {
+	       lang ++;
+          }
+
+          if(erts5 = "mysql") {
+	       lang ++;
+          }
+
+
+          if(lang >= 5) {
+	       alert("5/5 excellent")
+          } else if(lang <= 3) {
+	       alert(lang + "/5 study more")
+          }   
+           }
+		</script>
+		<footer class="footer">
+			<h2>A work by <strong>Chukwurah Frances Chinwe</strong></h2>
+		</footer>
+	</div>
+
+</body>
+</html>
